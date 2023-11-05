@@ -7,6 +7,7 @@ import cors from 'cors';
 const app = express();
 app.use(cors({
     origin: ["http://localhost:5173", "http://localhost:3000",
+    "http://localhost:8000", "http://lcorralesg.live:8000",
     "http://lcorralesg.live:5173", "http://lcorralesg.live:3000"
     ],
     credentials: true
