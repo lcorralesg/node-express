@@ -7,8 +7,8 @@ import cors from 'cors';
 const app = express();
 app.use(cors({
     origin: ["http://localhost:5173", "http://localhost:3000",
-    "http://54.166.217.206:5173", "http://54.166.217.206:3000",
-    "http://ec2-54-86-186-53.compute-1.amazonaws.com:5173", "http://ec2-54-86-186-53.compute-1.amazonaws.com:3000"],
+    "http://lcorralesg.live:5173", "http://lcorralesg.live:3000"
+    ],
     credentials: true
 }));
 app.use(express.json());
