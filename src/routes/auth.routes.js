@@ -1,9 +1,11 @@
 import {Router} from 'express';
-import {login, register, logout, profile, verifyToken} from '../controllers/auth.controller.js';
+import {login, register, preRegister, logout, profile, verifyToken} from '../controllers/auth.controller.js';
 import { authRequired } from '../middleware/validateToken.js';
 
 
 const router = Router();
+
+router.post('/pre-register', preRegister);
 
 router.post('/register', register);
 

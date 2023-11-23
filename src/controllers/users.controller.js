@@ -1,7 +1,7 @@
 import User from '../models/user.model.js';
 
 export const getUsers = async (req, res) => {
-    const users = await User.find();
+    const users = await User.find({ isVerified: true });
     res.json(users)
     .status(200);
 }
